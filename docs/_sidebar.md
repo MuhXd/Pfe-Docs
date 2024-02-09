@@ -1,3 +1,3 @@
 * [Home](/)
-* [Intro](/docs/README.md)
-* [MapLib](/docs/MapLib.md)
+* [Intro](/README.md)
+* [How to load MapLib](/MapLib.md)
