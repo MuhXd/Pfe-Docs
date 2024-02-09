@@ -1,0 +1,3 @@
+- Loading the module in the script
+- test
+- test2
