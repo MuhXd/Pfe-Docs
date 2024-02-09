@@ -8,7 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <!-- Dark Mode CSS -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/docsify-darklight-theme.min.css">
+  <style>
+    .dark-mode .content {
+      background-color: #1a1a1a;
+      color: #f0f0f0;
+    }
+  </style>
 </head>
 <body>
   <div id="app"></div>
@@ -17,9 +22,10 @@
       name: 'PFE DOCS',
       repo: '',
       // Dark mode configuration
-      darklightTheme: {
-        light: 'vue.css', // Light theme (default Docsify theme)
-        dark: 'docsify-darklight-theme.min.css' // Dark theme
+      darkMode: {
+        dark: true, // Enable dark mode by default
+        // Optional: Toggle switch label
+        label: 'Dark Mode'
       },
       // Tips plugin configuration
       plugins: [
@@ -32,6 +38,8 @@
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- Dark mode plugin script -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest"></script>
   <!-- Tips plugin script -->
   <script src="//cdn.jsdelivr.net/npm/docsify-plugin-flexible-alerts@latest"></script>
 </body>
