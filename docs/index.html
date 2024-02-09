@@ -7,6 +7,8 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <!-- Dark Mode CSS -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/docsify-darklight-theme.css">
 </head>
 <body>
   <div id="app"></div>
@@ -14,17 +16,23 @@
     window.$docsify = {
       name: 'PFE DOCS',
       repo: '',
-      loadSidebar: true, // Show sidebar
-      subMaxLevel: 2,    // Set maximum level for subheaders
-      alias: {
-        // Configure aliases for specific paths (optional)
-        '/.*/_sidebar.md': '/_sidebar.md'
-      }
+      // Dark mode configuration
+      darklightTheme: {
+        light: 'vue.css', // Light theme (default Docsify theme)
+        dark: '//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/docsify-darklight-theme.css' // Dark theme
+      },
+      // Tips plugin configuration
+      plugins: [
+        DocsifyFlexibleAlerts.plugin({
+          globalPosition: 'top',
+          maxTabWidth: '300px'
+        })
+      ]
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <!-- Docsify sidebar plugin -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse@2"></script>
+  <!-- Tips plugin script -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-plugin-flexible-alerts@latest"></script>
 </body>
 </html>
