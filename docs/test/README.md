@@ -1,3 +1,3 @@
-# Loading the module in the script
+# headline
 
 > This is how you use it
