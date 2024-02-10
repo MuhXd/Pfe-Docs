@@ -12,5 +12,6 @@
 * [Lib.moveWater](openfloodtest/Lib.moveWater.md)
 * [Lib.setWaterState](openfloodtest/Lib.setWaterState.md)
 * [Lib.Alert](Pfe/Alert.md)
+* [Lib.Survive](Pfe/Survive.md)
 - TRIA PORT LIB
 * [Tria Lib Info](Tria.os/Main.md)

@@ -1,7 +1,7 @@
 
 ## Function: `Lib.Alert`
 - Plays an alert
-> Client & Server, you can also use Lib.Script.Alert 
+> Client & Server, you can also use ``Lib.Script.Alert``
 ### Parameters:
 - `Message` (string): Text sent to the alert.
 - `color` (Color3): Color of the text.

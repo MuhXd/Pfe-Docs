@@ -19,3 +19,5 @@ Use the following code to import the PFE Lib:
 local Lib = game.GetPfeLib:Invoke("Latest") --Has: Map, Script, Button, btnFuncs
 Lib.Button:connect(function(p, bNo) if Lib.btnFuncs[bNo] then Lib.btnFuncs[bNo](bNo, p) end end)
 ```
+> "Latest" is the Latest version but you can pick other versions
+> e.g 1.0.0 is "1.0.0"

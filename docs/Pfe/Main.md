@@ -1,6 +1,6 @@
 # PFE LIB
 
-The PFE Lib is a versatile library that can run on both the client and server environments, offering flexibility and functionality across different contexts.
+The PFE Lib is a versatile library that can run on both the client and server environments, offering flexibility and functionality across different contexts, it has features from the Open flood test Lib as well!
 
 ## PFE LIB CAN RUN ON THE CLIENT AND SERVER
 
@@ -53,3 +53,12 @@ Lib.Script.setWaterState(Lib.Map.Intro._Water1, "acid")
 Lib:Alert("Test",Color3.new(1, 1, 1),10)
 ```
 > For more examples and detailed information on moveWater function, you can refer to the [Lib.Alert documentation](Pfe/Alert.md)
+
+### Lib.Survive Example
+- makes a player Survive
+```lua
+for i,Player in require(game.ReplicatedStorage.GameLib).GetPlayersWithPlayState("Playing") do
+	Lib:Survive(Player)
+end
+```
+> For more examples and detailed information on moveWater function, you can refer to the [Lib.Survive documentation](Pfe/Survive.md)

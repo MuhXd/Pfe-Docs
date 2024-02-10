@@ -1,6 +1,6 @@
 ## Function: `Lib.Script.setWaterState`
 - Moves water in the specified direction.
-> Server Only, If you are using the Pfe Lib you also use Lib.setWaterState
+> Server Only, If you are using the Pfe Lib you also use ``Lib.setWaterState``
 ### Parameters:
 
 - `Part` (Instance): The instance to be change states.

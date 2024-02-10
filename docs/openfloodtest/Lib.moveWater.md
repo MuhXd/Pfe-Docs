@@ -1,6 +1,6 @@
 ## Function: `Lib.Script.moveWater`
 - Moves water in the specified direction.
-> Server Only, If you are using the Pfe Lib you also use Lib.moveWater
+> Server Only, If you are using the Pfe Lib you also use ``Lib.moveWater``
 ### Parameters:
 
 - `Part` (Instance): The instance to be moved.
