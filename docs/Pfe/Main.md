@@ -27,3 +27,15 @@ Lib.moveWater(Lib.Map.Intro._Water1, Vector3.new(0, 30, 0), 10, true)
 ```
 
 > For more examples and detailed information on moveWater function, you can refer to the [Lib.moveWater documentation](openfloodtest/Lib.moveWater.md)
+
+### Lib.HookLiquidSwimEvent Example
+- Hooks to each not requid both function
+```lua
+Lib:HookLiquidSwimEvent(function(state)
+	print("Entering "..state)
+end,function(state)
+	print("Exiting "..state)
+end)
+```
+
+> For more examples and detailed information on moveWater function, you can refer to the [Lib.moveWater documentation](Pfe/HookLiquidSwimEvent.md)
