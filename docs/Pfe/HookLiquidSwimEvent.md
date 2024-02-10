@@ -1,7 +1,7 @@
 
 ## Function: `Lib.HookLiquidSwimEvent`
 - Runs event when entering/exiting a liquid.
-> Client Only, you can also use Lib.HookLiquidSwimEvent Works
+> Client Only, you can also use Lib.HookLiquidSwimEvent 
 ### Parameters:
 - `EnterEvent` (Function): Function that is called when entering the liquid.
 - `ExitEvent` (Function): Function that is called when exiting the liquid.
