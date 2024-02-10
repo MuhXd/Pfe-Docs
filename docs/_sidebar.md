@@ -8,8 +8,9 @@
 - PFE LIB
 * [Pfe Lib Info](Pfe/Main.md)
 * [Lib.Client](Pfe/Client.md)
-* [Lib:HookLiquidSwimEvent](Pfe/HookLiquidSwimEvent.md)
+* [Lib.HookLiquidSwimEvent](Pfe/HookLiquidSwimEvent.md)
 * [Lib.moveWater](openfloodtest/Lib.moveWater.md)
 * [Lib.setWaterState](openfloodtest/Lib.setWaterState.md)
+* [Lib.Alert](Pfe/Alert.md)
 - TRIA PORT LIB
 * [Tria Lib Info](Tria.os/Main.md)
