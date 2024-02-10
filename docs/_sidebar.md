@@ -17,5 +17,3 @@
 * [Lib.Survive](Pfe/Survive.md)
 * [Lib.CamLock](openfloodtest/lib.Camlock.md)
 * [Lib.ExitRegion](openfloodtest/lib.ExitRegion.md)
-- TRIA PORT LIB
-* [Tria Lib Info](Tria.os/Main.md)
