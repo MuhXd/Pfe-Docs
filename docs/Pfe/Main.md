@@ -39,3 +39,10 @@ end)
 ```
 
 > For more examples and detailed information on HookLiquidSwimEvent function, you can refer to the [HookLiquidSwimEvent documentation](Pfe/HookLiquidSwimEvent.md)
+
+### Lib.Script.setWaterState Example
+- if the _Water1 is in Intro then it sets it to acid
+```lua
+Lib.Script.setWaterState(Lib.Map.Intro._Water1, "acid")
+```
+> For more examples and detailed information on moveWater function, you can refer to the [Lib.setWaterState documentation](openfloodtest/Lib.setWaterState.md)
