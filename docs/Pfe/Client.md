@@ -1,8 +1,6 @@
 
-## Function: `Lib.Client`
+## Value: `Lib.Client`
 - Detects if the script is running on the `Client` or `Server`
-### Returns:
-- `boolean`: Returns `true` if Client, otherwise `false`.
 ## Example
 ```lua
 if Lib.Client then
