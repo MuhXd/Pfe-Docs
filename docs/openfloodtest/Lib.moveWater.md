@@ -10,7 +10,7 @@
 
 ### Returns:
 
-- `boolean`: Returns `true` if the water movement was successful, otherwise `false`.
+- `boolean`: Returns `true` if the water state was successful, otherwise `false`.
 
 ## Example
 ```lua
