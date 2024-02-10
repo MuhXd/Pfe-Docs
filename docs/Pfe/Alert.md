@@ -10,7 +10,7 @@
 - `nothing`
 ## Example
 ```lua
-Lib:Alert("Hello testing gayman67",Color3.new(1, 1, 0),5)
+Lib:Alert("Hello testing EternalMaid7",Color3.new(1, 1, 0),5)
 ```
 
 > Added in 1.0.0
