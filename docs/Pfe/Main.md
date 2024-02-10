@@ -75,5 +75,5 @@ Lib.Script.Camlock(Lib.Map.Intro._Water1)
 ```lua
 Lib.Script.ExitRegion(true,true)
 ```
-> For more examples and detailed information on Camlock function, you can refer to the [lib.Camlock documentation](openfloodtest/lib.ExitRegion.md)
+> For more examples and detailed information on Camlock function, you can refer to the [lib.ExitRegion documentation](openfloodtest/lib.ExitRegion.md)
 
