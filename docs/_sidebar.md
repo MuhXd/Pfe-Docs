@@ -4,6 +4,7 @@
 ### Open flood test lib
 * [Info](openfloodtest/OpenFloodTest.md)
 ### PFE LIB
-* [Info](Pfe/Main.md)
+* [PFE LIB Info](Pfe/Main.md)
+* [Lib.Client](Pfe/Client.md)
 ### TRIA PORT LIB
 * [Info](Tria.os/Main.md)

@@ -1,13 +1,20 @@
-# MapLib import
-> this is to import a maplib you can pick between what maplib you would like to use
-## This is the Open flood test lib loader
-> [Click me to understand how to use and more details on it](/openfloodtest/OpenFloodTest)
+# MapLib Import
+
+This section provides instructions for importing MapLib, which allows you to choose between different MapLib options.
+
+## Open Flood Test Lib Loader
+
+Use the following code to import the Open Flood Test Lib:
+
+> [Click here for more details](/openfloodtest/OpenFloodTest)
+
 ```lua
-local Lib = workspace.Multiplayer.GetMapVals:Invoke() --Has: Map, Script, Button, btnFuncs
+local Lib = workspace.Multiplayer.GetMapVals:Invoke() -- This function returns Map, Script, Button, and btnFuncs
 Lib.Button:connect(function(p, bNo) if Lib.btnFuncs[bNo] then Lib.btnFuncs[bNo](bNo, p) end end)
 ```
-## This is the PFE lib loader
-> [Click me to understand how to use and more details on it](Pfe/Main)
+## PFE Lib Loader
+Use the following code to import the PFE Lib:
+> [Click here for more details](Pfe/Main)
 ```lua
 local Lib = game.GetPfeLib:Invoke("Latest") --Has: Map, Script, Button, btnFuncs
 Lib.Button:connect(function(p, bNo) if Lib.btnFuncs[bNo] then Lib.btnFuncs[bNo](bNo, p) end end)
