@@ -8,7 +8,7 @@ This section highlights the capability of the PFE Lib to operate seamlessly on b
 
 ### Client-Side Example
 
-To illustrate how the PFE Lib behaves differently based on whether it's running on the client or server, read the following Lua:
+To illustrate how the PFE Lib behaves differently based on whether it's running on the client or server, read the following Script:
 
 ```lua
 if Lib.Client then
