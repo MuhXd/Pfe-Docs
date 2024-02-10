@@ -5,6 +5,8 @@
 * [Open Flood Test Info](openfloodtest/OpenFloodTest.md)
 * [Lib.Script.moveWater](openfloodtest/Lib.moveWater.md)
 * [Lib.Script.setWaterState](openfloodtest/Lib.setWaterState.md)
+* [Lib.Script.CamLock](openfloodtest/lib.Camlock.md)
+* [Lib.Script.ExitRegion](openfloodtest/lib.ExitRegion.md)
 - PFE LIB
 * [Pfe Lib Info](Pfe/Main.md)
 * [Lib.Client](Pfe/Client.md)
@@ -13,5 +15,7 @@
 * [Lib.setWaterState](openfloodtest/Lib.setWaterState.md)
 * [Lib.Alert](Pfe/Alert.md)
 * [Lib.Survive](Pfe/Survive.md)
+* [Lib.CamLock](openfloodtest/lib.Camlock.md)
+* [Lib.ExitRegion](openfloodtest/lib.ExitRegion.md)
 - TRIA PORT LIB
 * [Tria Lib Info](Tria.os/Main.md)

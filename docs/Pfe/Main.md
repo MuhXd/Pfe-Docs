@@ -62,3 +62,18 @@ for i,Player in require(game.ReplicatedStorage.GameLib).GetPlayersWithPlayState(
 end
 ```
 > For more examples and detailed information on moveWater function, you can refer to the [Lib.Survive documentation](Pfe/Survive.md)
+
+### Lib.Camlock Example
+- if the _Water1 is in intro lock camera to it
+```lua
+Lib.Script.Camlock(Lib.Map.Intro._Water1)
+```
+> For more examples and detailed information on Camlock function, you can refer to the [lib.Camlock documentation](openfloodtest/lib.Camlock.md)
+
+### Lib.ExitRegion Example
+- if the _Water1 is in intro lock camera to it
+```lua
+Lib.Script.ExitRegion(true,true)
+```
+> For more examples and detailed information on Camlock function, you can refer to the [lib.Camlock documentation](openfloodtest/lib.ExitRegion.md)
+
