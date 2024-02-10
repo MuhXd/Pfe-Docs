@@ -3,7 +3,7 @@
 > Server Only, If you are using the Pfe Lib you also use ``Lib.setWaterState``
 ### Parameters:
 
-- `Part` (Instance): The instance to be change states.
+- `Part` (Instance): The instance to change states.
 - `State` (String): The state to change to.
 
 ### Returns:

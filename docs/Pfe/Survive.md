@@ -1,5 +1,5 @@
 
-## Value: `Lib.Survive`
+## Function: `Lib.Survive`
 - Makes the Player Win the map.
 > Server Only, you can also use ``Lib.Script.Survive``
 ### Parameters:
