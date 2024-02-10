@@ -24,22 +24,26 @@
       name: 'PFE DOCS',
       repo: '',
       // Dark mode configuration
-    search: {
-               maxAge: 86400000, // Expiration time, the default one day
-              paths: 'auto', // or 'auto'
-              placeholder: 'Type to search',
-              noData: 'No Results!',
-              // Headline depth, 1 - 6
-               depth: 2,
+      search: {
+        maxAge: 86400000, // Expiration time, the default one day
+        paths: 'auto', // or 'auto'
+        placeholder: 'Type to search',
+        noData: 'No Results!',
+        // Headline depth, 1 - 6
+        depth: 2,
       },
-  discord: {
-    serverId: "1131251242618855454", // Required
-    title: "Join our Discord", // Optional
-    theme: "dark", // Optional
-    inviteLink: "https://discord.gg/cPJatNHu8M", // Optional
-    position: "right", // Optional
-  },
-  darkMode: {
+      discord: {
+        serverId: "1131251242618855454", // Required
+        title: "Join our Discord", // Optional
+        theme: "dark", // Optional
+        inviteLink: "https://discord.gg/cPJatNHu8M" // Optional
+      },
+      roblox: {
+        title: "Join our Roblox Group", // Optional
+        theme: "dark", // Optional
+        inviteLink: "https://www.roblox.com/groups/33615374/A-wes-me-C-reat-rs" // Optional
+      },
+      darkMode: {
         dark: true, // Enable dark mode by default
         // Optional: Toggle switch label
         label: 'Dark Mode'
@@ -57,6 +61,7 @@
   <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-game/dist/index.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-discord/dist/index.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-roblox/dist/index.min.js"></script> <!-- Add the Roblox plugin script -->
   <script src="//cdn.jsdelivr.net/npm/docsify-prism/dist/index.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-footer/dist/index.min.js"></script>
 </body>
