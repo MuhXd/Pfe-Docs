@@ -18,7 +18,7 @@ else
 end
 ```
 
-> For more examples and detailed information on client-side functionality, you can refer to the [PFE Client documentation](Pfe/Client.md)
+> For more examples and detailed information on Client Value, you can refer to the [Lib.Client documentation](Pfe/Client.md)
 
 ### Lib.moveWater Example
 - if the _Water1 is in Intro then it moves 30 Y at 10 seconds
@@ -38,7 +38,7 @@ end,function(state)
 end)
 ```
 
-> For more examples and detailed information on HookLiquidSwimEvent function, you can refer to the [HookLiquidSwimEvent documentation](Pfe/HookLiquidSwimEvent.md)
+> For more examples and detailed information on HookLiquidSwimEvent function, you can refer to the [Lib.HookLiquidSwimEvent documentation](Pfe/HookLiquidSwimEvent.md)
 
 ### Lib.setWaterState Example
 - if the _Water1 is in Intro then it sets it to acid
