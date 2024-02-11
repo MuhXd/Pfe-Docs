@@ -6,6 +6,9 @@ The PFE Lib is a versatile library that can run on both the client and server en
 
 This section highlights the capability of the PFE Lib to operate seamlessly on both the client and server sides of your script.
 
+### Version list
+> This lib can backport and use ``older versions``, to view all versions go to [Version List](Pfe/Versions.md)
+
 ### Lib.Client Example
 
 To illustrate how the PFE Lib behaves differently based on whether it's running on the client or server, read the following Script:
@@ -45,14 +48,14 @@ end)
 ```lua
 Lib.Script.setWaterState(Lib.Map.Intro._Water1, "acid")
 ```
-> For more examples and detailed information on moveWater function, you can refer to the [Lib.setWaterState documentation](openfloodtest/Lib.setWaterState.md)
+> For more examples and detailed information on setWaterState function, you can refer to the [Lib.setWaterState documentation](openfloodtest/Lib.setWaterState.md)
 
 ### Lib.Alert Example
 - sends a alert
 ```lua
 Lib:Alert("Test",Color3.new(1, 1, 1),10)
 ```
-> For more examples and detailed information on moveWater function, you can refer to the [Lib.Alert documentation](Pfe/Alert.md)
+> For more examples and detailed information on Alert function, you can refer to the [Lib.Alert documentation](Pfe/Alert.md)
 
 ### Lib.Survive Example
 - makes a player Survive
@@ -61,7 +64,7 @@ for i,Player in require(game.ReplicatedStorage.GameLib).GetPlayersWithPlayState(
 	Lib:Survive(Player)
 end
 ```
-> For more examples and detailed information on moveWater function, you can refer to the [Lib.Survive documentation](Pfe/Survive.md)
+> For more examples and detailed information on Survive function, you can refer to the [Lib.Survive documentation](Pfe/Survive.md)
 
 ### Lib.Camlock Example
 - if the _Water1 is in intro lock camera to it
@@ -75,7 +78,7 @@ Lib.Script.Camlock(Lib.Map.Intro._Water1)
 ```lua
 Lib.Script.ExitRegion(true,true)
 ```
-> For more examples and detailed information on Camlock function, you can refer to the [lib.ExitRegion documentation](openfloodtest/lib.ExitRegion.md)
+> For more examples and detailed information on ExitRegion function, you can refer to the [lib.ExitRegion documentation](openfloodtest/lib.ExitRegion.md)
 
 ### Lib.Teleport Example
 - if the _Water1 is in intro teleport to it
@@ -88,3 +91,21 @@ end
 ```
 > For more examples and detailed information on Teleport function, you can refer to the [lib.Teleport documentation](Pfe/Teleport.md)
 
+
+### Lib.GetAirValue Example
+- Get current air amount
+```lua
+if Lib:GetAirValue(true) > 90 then
+print("User has more then 90 air")
+end
+```
+> For more examples and detailed information on GetAirValue function, you can refer to the [lib.GetAirValue documentation](Pfe/GetAirValue.md)
+
+### Lib.CalledAirSwim Example
+- Waits for air to be 20 then calls it
+```lua
+Lib:CalledAirSwim(20,true,function()
+	print("User has 20 air combinded with Airtank")
+end)
+```
+> For more examples and detailed information on CalledAirSwim function, you can refer to the [lib.CalledAirSwim documentation](Pfe/CalledAirSwim.md)

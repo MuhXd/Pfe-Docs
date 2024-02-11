@@ -21,3 +21,4 @@ Lib.Button:connect(function(p, bNo) if Lib.btnFuncs[bNo] then Lib.btnFuncs[bNo](
 ```
 > "Latest" is the Latest version but you can pick other versions
 > e.g 1.0.0 is "1.0.0"
+> please look at the version list [here](Pfe/Versions.md) if you want to pick one
