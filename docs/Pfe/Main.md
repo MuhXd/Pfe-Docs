@@ -77,3 +77,14 @@ Lib.Script.ExitRegion(true,true)
 ```
 > For more examples and detailed information on Camlock function, you can refer to the [lib.ExitRegion documentation](openfloodtest/lib.ExitRegion.md)
 
+### Lib.Teleport Example
+- if the _Water1 is in intro teleport to it
+```lua
+if Lib.Client then -- teleporting is not the same on the client / server
+Lib:Teleport(game.Players.LocalPlayer,Lib.Map.Intro._Water1.CFrame,false) -- client
+else
+Lib:Teleport(require(game.ReplicatedStorage.GameLib).GetPlayersWithPlayState("Playing"),Lib.Map.Intro._Water1.CFrame,false) -- server
+end
+```
+> For more examples and detailed information on Teleport function, you can refer to the [lib.Teleport documentation](Pfe/Teleport.md)
+
