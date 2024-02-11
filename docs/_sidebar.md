@@ -18,3 +18,5 @@
 * [Lib.CamLock](openfloodtest/lib.Camlock.md)
 * [Lib.ExitRegion](openfloodtest/lib.ExitRegion.md)
 * [Lib.Teleport](Pfe/Teleport.md)
+* [Lib.GetAirValue](Pfe/GetAirValue.md)
+* [Lib.CalledAirSwim](Pfe/CalledAirSwim.md)
