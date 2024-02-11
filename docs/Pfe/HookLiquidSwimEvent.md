@@ -7,12 +7,14 @@
 - `ExitEvent` (Function): Function that is called when exiting the liquid.
 ### Returns:
 - `boolean`: Returns `true` if the hook was successful, otherwise `false` or `error`.
+- The `Function` sent has `state` and `object`
+> `object` was added in `1.0.1`
 ## Example
 ```lua
-Lib:HookLiquidSwimEvent(function(state)
-	print("Entering "..state)
-end,function(state)
-	print("Exiting "..state)
+Lib:HookLiquidSwimEvent(function(state,object)
+	print("Entering "..object.." With state "..state)
+end,function(state,object)
+	print("Entering "..object.." With state "..state)
 end)
 ```
 
