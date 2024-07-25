@@ -23,7 +23,7 @@ Lib.Script.Camlock(Lib.Map.Intro._Water1)
 > For more examples and detailed information on Camlock function, you can refer to the [lib.Camlock documentation](openfloodtest/lib.Camlock.md)
 
 ### Lib.Script.ExitRegion Example
-- if the _Water1 is in intro lock camera to it
+- Enables the ExitRegion without having to click all the maps buttons
 ```lua
 Lib.Script.ExitRegion(true,true)
 ```
