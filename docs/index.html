@@ -16,16 +16,6 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-footer/dist/style.min.css" />
   <!-- Add the icon to the tab bar -->
   <link rel="icon" href="https://tr.rbxcdn.com/4af4592947c6e0e789f3a12e47253f5a/500/500/Image/Webp">
-  <!--load it first -->
-  <script>
-    // Initial theme setting to prevent flash
-    const theme = localStorage.getItem('docsify-darklight-theme') || 'dark';
-    if (theme === 'light') {
-      document.documentElement.style.backgroundColor = '#fff';
-    } else {
-      document.documentElement.style.backgroundColor = '#000';
-    }
-  </script>
 </head>
 <body>
   <div id="app"></div>
@@ -69,7 +59,7 @@
         renderer: {
           code: function (code, lang) {
             if (lang === 'lua') {
-              return '<pre v-pre data-lang="luau"><code class="lang-luau">' + Prism.highlight(code, Prism.languages.lua, 'luau') + '</code></pre>';
+              return '<pre><code class="language-luau">' + code + '</code></pre>';
             }
             return this.origin.code.apply(this, arguments);
           }
@@ -87,8 +77,13 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css">
   <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-lua.min.js"></script>
-  <script src="luau-prism.js"></script>
+  <!-- Highlight.js and Luau language support -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-luau/1.0.0/luau.min.js"></script>
+  <script>
+    hljs.registerLanguage('luau', hljsDefineLuau);
+    hljs.highlightAll();
+  </script>
 </body>
 </html>
