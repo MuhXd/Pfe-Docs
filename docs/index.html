@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- Info loader -->
+  <!-- Info -->
   <meta property="og:title" content="PFE DOCS">
   <meta property="og:description" content="This is the documentation for PFE">
   <meta property="og:image" content="https://tr.rbxcdn.com/4af4592947c6e0e789f3a12e47253f5a/500/500/Image/Webp">
-  <!-- End of main info -->
+  <!-- headings -->
   <title>PFE DOCS</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="PFE DOCS" content="This is the documentation for PFE">
@@ -14,17 +14,26 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-footer/dist/style.min.css" />
+  <script src="//cdn.jsdelivr.net/npm/docsify-game/dist/index.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-discord/dist/index.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-roblox/dist/index.min.js"></script> 
+  <script src="//cdn.jsdelivr.net/npm/docsify-prism/dist/index.min.js"></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css">
+  <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+
   <!-- Add the icon to the tab bar -->
   <link rel="icon" href="https://tr.rbxcdn.com/4af4592947c6e0e789f3a12e47253f5a/500/500/Image/Webp">
-  <!-- Prevent white flash on reload -->
-  <style>
-    html, body {
-      background: #1e1e1e;
-      color: #fff;
-      transition: background 0.3s, color 0.3s;
+  <!--load it first -->
+  <script>
+    // Initial theme setting to prevent flash
+    const theme = localStorage.getItem('docsify-darklight-theme') || 'dark';
+    if (theme === 'light') {
+      document.documentElement.style.backgroundColor = '#fff';
+      document.documentElement.style.color = '#000';
     }
-  </style>
-</head> 
+  </script>
+</head>
 <body>
   <div id="app"></div>
   <script>
@@ -54,7 +63,11 @@
       darkMode: {
         dark: true, // Enable dark mode by default
         // Optional: Toggle switch label
-        label: 'Dark Mode'
+        label: 'Dark Mode',
+        background: '#000', // Set dark mode background to black
+        toggleBackground: '#fff', // Light mode background
+        textColor: '#fff', // Dark mode text color
+        toggleTextColor: '#000' // Light mode text color
       },
       // Load sidebar from _sidebar.md
       loadSidebar: true,
@@ -73,16 +86,6 @@
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <!-- Dark mode plugin script -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css">
-  <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"></script>
-  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-game/dist/index.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-discord/dist/index.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-roblox/dist/index.min.js"></script> <!-- Add the Roblox plugin script -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-prism/dist/index.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-footer/dist/index.min.js"></script>
-  <!-- Include Prism.js for Lua syntax highlighting -->
   <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-lua.min.js"></script>
 </body>
 </html>
