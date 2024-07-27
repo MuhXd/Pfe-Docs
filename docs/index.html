@@ -69,7 +69,7 @@
         renderer: {
           code: function (code, lang) {
             if (lang === 'lua') {
-              return '<pre v-pre data-lang="lua"><code class="lang-luau">' + Prism.highlight(code, Prism.languages.lua, 'luau') + '</code></pre>';
+              return '<pre v-pre data-lang="luau"><code class="lang-luau">' + Prism.highlight(code, Prism.languages.lua, 'luau') + '</code></pre>';
             }
             return this.origin.code.apply(this, arguments);
           }
