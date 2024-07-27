@@ -22,7 +22,8 @@
     const theme = localStorage.getItem('docsify-darklight-theme') || 'dark';
     if (theme === 'light') {
       document.documentElement.style.backgroundColor = '#fff';
-      document.documentElement.style.color = '#000';
+    } else {
+      document.documentElement.style.backgroundColor = '#000';
     }
   </script>
 </head>
