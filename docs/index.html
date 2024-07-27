@@ -17,7 +17,17 @@
   <!-- Add the icon to the tab bar -->
   <link rel="icon" href="https://tr.rbxcdn.com/4af4592947c6e0e789f3a12e47253f5a/500/500/Image/Webp">
   <!--load it first -->
-  <!-- Dark mode plugin script -->
+  <script>
+    // Initial theme setting to prevent flash
+    const theme = localStorage.getItem('docsify-darklight-theme') || 'dark';
+    if (theme === 'light') {
+      document.documentElement.style.backgroundColor = '#fff';
+      document.documentElement.style.color = '#000';
+    }
+  </script>
+</head>
+<body>
+  <div id="app"></div>
   <script>
     window.$docsify = {
       name: 'PFE DOCS',
@@ -66,20 +76,16 @@
       }
     }
   </script>
-  
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css">
-  <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"></script>
-  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-lua.min.js"></script>
-</head>
-<body>
-  <div id="app"></div>
-  
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-game/dist/index.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-discord/dist/index.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-roblox/dist/index.min.js"></script> 
   <script src="//cdn.jsdelivr.net/npm/docsify-prism/dist/index.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- Dark mode plugin script -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css">
+  <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-lua.min.js"></script>
 </body>
 </html>
