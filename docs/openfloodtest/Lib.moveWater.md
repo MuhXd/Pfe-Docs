@@ -4,7 +4,7 @@
 ### Parameters:
 
 - `Part` (Instance): The instance to be moved.
-- `Vector3` (Vector3): The direction in which to move the water.
+- `Direction` (Vector3): The direction in which to move the water.
 - `duration` (number): The duration of the movement animation.
 - `isLocalSpace` (boolean): Whether the movement should be relative to the water's local rotation.
 
